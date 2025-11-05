@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int sec;
+
+    cout << "Input a number >1 (in seconds): ";
+    cin >> sec;
+
+    int hour = sec / 3600;
+    int remainSec = sec % 3600;
+    int min = remainSec / 60;
+    int finalSec = remainSec % 60;
+
+    cout << "\nConversion Results : " << endl;
+    cout << sec << " Seconds = " << hour << " Hours, " << min << " Minutes, " << finalSec << " Seconds. ";
+
+
+    return 0;
+}
